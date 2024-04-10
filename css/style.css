@@ -50,15 +50,10 @@ a {
     text-decoration: none;
 }
 
-/* body {
-    background-image: url(/images/NOEMI_mq_mobile.jpg);
-    opacity: 0.3;
-} */
-
 /* Стили шапки */
 .header {
     width: 100%;
-    background-image: url("/images/banner-mobile.jpg");
+    background-image: url("images/banner-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #000;
@@ -200,7 +195,7 @@ a {
 }
 
 .trends__item-plants {
-    background-image: url("/images/trend1.jpg");
+    background-image: url("images/trend1.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #000;
@@ -208,7 +203,7 @@ a {
 }
 
 .trends__item-food {
-    background-image: url("/images/trend2.jpg");
+    background-image: url("images/trend2.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #000;
@@ -216,7 +211,7 @@ a {
 }
 
 .trends__item-mountains {
-    background-image: url("/images/trend3.jpg");
+    background-image: url("images/trend3.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #000;
@@ -224,7 +219,7 @@ a {
 }
 
 .trends__item_lemons {
-    background-image: url("/images/trend4.jpg");
+    background-image: url("images/trend4.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #000;
@@ -847,7 +842,7 @@ margin-top: 44px;
 @media (min-width: 768px) {
     .header {
         width: 100%;
-        background-image: url("/images/banner-bg-tablet.jpg");
+        background-image: url("images/banner-bg-tablet.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-color: #000;
@@ -910,7 +905,7 @@ margin-top: 44px;
 
     .header {
         width: 100%;
-        background-image: url("/images/banner-bg.jpg");
+        background-image: url("images/banner-bg.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-color: #000;
