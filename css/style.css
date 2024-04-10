@@ -851,6 +851,7 @@ margin-top: 44px;
     }
 
     .trends__items {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 3px;
@@ -891,7 +892,8 @@ margin-top: 44px;
 /* ландшафтная ориентация */
 @media (min-width: 641px) and (orientation: landscape) {
     .trends__items {
-        grid-template-columns: repeat(4, 1fr);
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         grid-template-rows: 1fr;
         gap: 3px;
     }
