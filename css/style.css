@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'OpenSans';
     src: local("OpenSansRegular"),
-         url('OpenSans-Regular.woff') format('woff'),
-         url('OpenSans-Regular.woff2') format('woff2'),
-         url('OpenSans-Regular.ttf') format('truetype');
+         url('/mq-diplom/fonts/OpenSans-Regular.woff') format('woff'),
+         url('/mq-diplom/fonts/OpenSans-Regular.woff2') format('woff2'),
+         url('/mq-diplom/fonts/OpenSans-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -12,9 +12,9 @@
 @font-face {
     font-family: 'OpenSans';
     src: local("OpenSansBold"),
-         url('OpenSans-Bold.woff') format('woff'),
-         url('OpenSans-Bold.woff2') format('woff2'),
-         url('OpenSans-Bold.ttf') format('truetype');
+         url('/mq-diplom/fonts/OpenSans-Bold.woff') format('woff'),
+         url('/mq-diplom/fonts/OpenSans-Bold.woff2') format('woff2'),
+         url('/mq-diplom/fonts/OpenSans-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -416,7 +416,7 @@ margin-top: 44px;
 
 .search-button {
     background-color: #b59f5b;
-    background-image: url("/svg/search.svg");
+    background-image: url("/mq-diplom/svg/search.svg");
     background-size: 18px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -664,15 +664,15 @@ margin-top: 44px;
 }
   
 .socials__link-dribbble {
-    background-image: url("/svg/001-dribbble.svg");
+    background-image: url("/mq-diplom/svg/001-dribbble.svg");
 }
   
 .socials__link-pinterest {
-    background-image: url("/svg/002-pinterest.svg");
+    background-image: url("/mq-diplom/svg/002-pinterest.svg");
 }
   
 .socials__link-tumblr {
-    background-image: url("/svg/003-tumblr.svg");
+    background-image: url("/mq-diplom/svg/003-tumblr.svg");
 }
   
 .copyright {
@@ -760,7 +760,7 @@ margin-top: 44px;
     font-size: 1.3rem;
     -moz-appearance: none;
     -webkit-appearance: none;
-    background-image: url("/svg/form-arrows.svg");
+    background-image: url("/mq-diplom/svg/form-arrows.svg");
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 1.3rem;
@@ -778,7 +778,7 @@ margin-top: 44px;
 	display: inline-block;
 	width: 25px;
 	height: 25px;
-	background-image: url("/svg/form-empty-circle.svg");
+	background-image: url("/mq-diplom/svg/form-empty-circle.svg");
 	background-repeat: no-repeat;
 	background-position: center  center;
 	background-size: 25px;
@@ -803,7 +803,7 @@ margin-top: 44px;
 }
 
 .radio:checked ~ .radio-group-text::before {
-	background-image: url("/svg/form-circle.svg");
+	background-image: url("/mq-diplom/svg/form-circle.svg");
 }
 
 .radio {
