@@ -748,9 +748,9 @@ margin-top: 44px;
 .popup__close {
     position: absolute;
     right: 0;
-    top: -32px;
-    width: 30px;
-    height: 30px;
+    top: -22px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -996,19 +996,6 @@ margin-top: 44px;
 
     .items__card {
         flex-grow: 1;
-    }
-
-    .popup__close {
-        position: absolute;
-        right: 0;
-        top: -22px;
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
     }
 
     .popup__content {
