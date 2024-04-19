@@ -88,11 +88,6 @@ a {
     
 }
 
-/* .menu {
-    display: flex;
-    justify-content: end;
-} */
-
 .menu__hamburger {
     display: block;
     width: 23px;
@@ -149,7 +144,7 @@ a {
 .trends__title::after{
     content: "";
     display: block;
-    width: 19%;
+    width: 66px;
     height: 3px;
     background-color: #e1d9bd;
     margin-top: 10px;
@@ -293,7 +288,7 @@ a {
 
 .article__title {
     font-family: "OpenSans", Arial, san-serif;
-    font-size: 1.61rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 24px;
@@ -348,7 +343,7 @@ margin-top: 44px;
 .section__title {
     font-family: "OpenSans", Arial, san-serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 1.6rem;
     text-align: center;
     line-height: 1;
     font-weight: bold;
@@ -548,7 +543,27 @@ margin-top: 44px;
 
 /* Наши изделия */
 .section__items {
-  margin-top: 44px;      
+    margin-top: 44px;
+}
+
+.section__items-title {
+    font-family: "OpenSans", Arial, san-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.section__items-title::after{
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    background-color: #e1d9bd;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .items {
@@ -557,7 +572,7 @@ margin-top: 44px;
 }
 
 .items__image {
-    width: 80%;
+    width: 87%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -571,22 +586,22 @@ margin-top: 44px;
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    margin-top: -25px;
+    margin-top: -35px;
     margin-left: auto;
     margin-right: auto;
-    padding: 45px 32px 25px 32px;
+    padding: 52px 21px 26px 20px;
     border: 3px solid #b59f5b;
 }
 
 .items__title {
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: #0f0d0e;
     font-weight: bold;
 }
 
 .items__description {
-    margin-top: 11px;
+    margin-top: 2px;
     font-size: 1.5rem;
     line-height: 1.46;
     color: #0f0d0e;
@@ -616,7 +631,8 @@ margin-top: 44px;
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
-    padding: 20px;
+    padding: 14px;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -702,6 +718,10 @@ margin-top: 44px;
     margin-bottom: 20px;
 }
 
+.btn:hover {
+    background-color: #323232;
+}
+
 .popup-state {
     display: none;
 }
@@ -714,6 +734,7 @@ margin-top: 44px;
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 3;
 }
 
 .popup__content {
@@ -721,17 +742,15 @@ margin-top: 44px;
     margin: auto;
     background: #fff;
     width: 80%;
-    max-width: 260px;
-    min-height: 80vh;
-    padding: 20px;
+    padding: 35px 20px;
 }
 
 .popup__close {
     position: absolute;
     right: 0;
-    top: -22px;
-    width: 20px;
-    height: 20px;
+    top: -32px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -850,16 +869,87 @@ margin-top: 44px;
         position: relative;
     }
 
+    .wrap {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 35px;
+        padding-right: 35px;
+        box-sizing: border-box;
+    }
+
+    .wrap-header {
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo_image {
+        display: block;
+        width: 158px;
+    }
+
+    .header__title {
+        font-size: 4rem;
+        max-width: 640px;
+        line-height: 1.38;
+        text-align: center;
+        margin: auto;
+        padding: 90px 0 110px;
+    } 
+
+    .trends {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .trends__title {
+        font-size: 1.8rem;
+    }
+
     .trends__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 3px;
+        margin-top: 20px;
+    }
+
+    .trends__item {
+        min-height: 213px;
+    }
+
+    .article__desription {
+        font-size: 1.7rem;
+        line-height: 1.29;
+    }
+
+    .section__title {
+        font-size: 1.4rem;
     }
 
     .content__container {
         display: flex;
         gap: 4%;
+    }
+
+    .article__title {
+        font-size: 1.7rem;
+        line-height: 1.29;
+    }
+
+    .article__text > p {
+        font-size: 1.5rem;
     }
 
     .aside {
@@ -872,20 +962,56 @@ margin-top: 44px;
         flex-grow: 1;
     }
 
+    .section__items-title {
+        font-size: 1.8rem;
+    }
+
+    .section__items {
+        font-size: 1.8rem;
+    }
+
+    .items__title {
+        font-size: 1.8rem;
+    }
+
+    .items__description{
+        font-size: 1.5rem;
+    }
+
     .items__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         gap: 23px;
+        margin-top: 30px;
     }
 
     .items {
-        width: calc((100% - 23px - 30px) / 2);
+        width: calc((100% - 23px) / 2);
         display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
 
     .items__card {
         flex-grow: 1;
+    }
+
+    .popup__close {
+        position: absolute;
+        right: 0;
+        top: -22px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .popup__content {
+        max-width: 260px;
     }
 }
 
@@ -903,6 +1029,8 @@ margin-top: 44px;
 @media (min-width: 1200px) {
     .wrap {
         max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .header {
@@ -915,6 +1043,10 @@ margin-top: 44px;
         position: relative;
     }
 
+    .menu {
+        flex-direction: row;
+    }
+
     .menu__hamburger {
         display: none;
     }
@@ -924,35 +1056,61 @@ margin-top: 44px;
         gap: 36px;
     }
 
-    .menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .menu__list-link {
         color: #fff;
         font-size: 13px;  
         text-transform: uppercase;
     }
-
-    .logo {
-        display: block;
-        padding: 0;
-    }
       
     .logo_image {
+        display: block;
         width: 180px;
     }
 
     .header__title {
         font-size: 4.5rem;
-        max-width: 700px;
+        max-width: 725px;
         line-height: 1.67;
         text-align: center;
         margin: auto;
         padding: 100px 0 125px;
     } 
+
+    /* блок в тренде */
+
+    .trends {
+        margin-top: 63px;
+        margin-bottom: 66px;
+    }
+
+    .trends__title {
+        font-size: 2rem;
+    }
+
+    .trends__items {
+        max-width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 4px;
+    }
+    .trends__item {
+        padding: 20px;
+        min-height: 280px;
+    }
+    
+    .trends__link {
+        margin-bottom: 8px;
+    }
+
+    .article__desription {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    /* блок статей */
+    .content__container {
+        gap: 125px;
+    }
 
     .article {
         display: flex;
@@ -961,10 +1119,28 @@ margin-top: 44px;
     .article__wrp {
         margin-left: 30px;
     }
+
+    .article__title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .article:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .article__meta {
+        margin-bottom: 50px;
+    }
       
-      .article__img {
+    .article__img {
         width: 380px;
         display: block;
+    }
+
+    .article__text > p {
+        font-size: 1.5rem;
+        line-height: 1.47;
     }
 
     .article__text > p:last-child {
@@ -977,5 +1153,36 @@ margin-top: 44px;
 
     .items__list {
         flex-wrap: nowrap;
+    }
+
+    /* блок aside */
+
+    .aside {
+        width: 275px;
+    }
+
+    .aside__article-first {
+        margin-top: 30px;
+    }
+
+    .section:nth-child(n+2) {
+        margin-top: 60px;
+    }
+
+    .topic__list-item:nth-child(n+2) {
+        margin-top: 19px;
+    }
+
+    /* блок наши изделия */
+    .section__items {
+        margin-top: 67px;      
+    }
+
+    .section__items-title{
+        font-size: 2rem;
+    }
+
+    .items__title {
+        font-size: 2rem;
     }
 }
