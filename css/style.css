@@ -100,7 +100,7 @@ a {
     display: none;
 }
 
-.logo {
+.logo_image {
     display: block;
     width: 82%;
     padding: 175px 0 35px;
@@ -897,6 +897,7 @@ margin-top: 44px;
     .logo_image {
         display: block;
         width: 158px;
+        padding: 0;
     }
 
     .header__title {
